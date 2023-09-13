@@ -37,4 +37,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2em;
+}
+.BenefitsGrid {
+  @include makeGrid(repeat(3, 1fr), 2.5em);
+}
+.Benefit {
+  display: flex;
+}
+.BenefitsTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

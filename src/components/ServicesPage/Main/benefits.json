@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Hiking",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/fa-solid_hiking.svg"
+    },
+    {
+        "id": 2,
+        "title": "Staking",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/icon-park-outline_rollerskates.svg"
+    },
+    {
+        "id": 3,
+        "title": "Climbing",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/map_climbing.svg"
+    },
+    {
+        "id": 4,
+        "title": "Tours",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/simple-icons_yourtraveldottv.svg"
+    },
+    {
+        "id": 5,
+        "title": "Diving",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/fluent-emoji-high-contrast_diving-mask.svg"
+    },
+    {
+        "id": 6,
+        "title": "Flying",
+        "text": "Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.",
+        "src": "../../../src/assets/img/icons/fa-brands_fly.svg"
+    }
+]

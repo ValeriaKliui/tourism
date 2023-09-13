@@ -1,0 +1,10 @@
+.Benefit {
+  display: flex;
+  gap: 1.5em;
+}
+.Text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}

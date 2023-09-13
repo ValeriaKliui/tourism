@@ -3,9 +3,11 @@ import classes from "./classes.module.scss";
 import servicesInfo from "./servicesCard.json";
 import postInfo from "./postCard.json";
 import facilitiesInfo from "./facilities.json";
+import benefitsInfo from "./benefits.json";
 import { CardPost } from "../CardPost/CardPost";
 import { MyButton } from "../../Shared/MyButton/MyButton";
 import { Facility } from "../Facility/Facility";
+import { Benefit } from "../Benefit/Benefit";
 export const Main = () => {
   return (
     <main>
@@ -41,8 +43,15 @@ export const Main = () => {
           </div>
         </div>
         <div className={[classes.Benefits, "wrapper"].join(" ")}>
-          <p>BENEFITS</p>
-          <h2 className="title-m">OUR SERVICE</h2>
+          <div className={classes.BenefitsTitle}>
+            <p>BENEFITS</p>
+            <h2 className="title-m">OUR SERVICE</h2>
+          </div>
+          <div className={classes.BenefitsGrid}>
+            {benefitsInfo.map(({ id, title, src, text }) => (
+              <Benefit key={id} title={title} src={src} text={text} />
+            ))}
+          </div>
         </div>
       </div>
     </main>

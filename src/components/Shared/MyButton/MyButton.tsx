@@ -18,7 +18,8 @@ export const MyButton: React.FC<MyButtonProps> = ({
         isTransparent ? classes.isTransparent : "",
       ].join(" ")}
     >
-      {text} <img src={picLink} alt="" />
+      {text}
+      {picLink && <img src={picLink} alt="" />}
     </button>
   );
 };
