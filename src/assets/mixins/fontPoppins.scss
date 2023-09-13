@@ -1,0 +1,13 @@
+@mixin fontPoppins($weight: 400, $size: 1em, $line-height: 180%) {
+  $src: "./assets/fonts/Poppins-Regular.ttf";
+
+  @font-face {
+    font-family: "Poppins";
+    src: url($src);
+  }
+
+  font-family: "Poppins";
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}

@@ -1,0 +1,17 @@
+@import "../../../assets/vars/vars.scss";
+@import "../../../assets/mixins/makeGrid.scss";
+
+.Footer {
+  background-color: $secondary;
+  color: $the-lightest;
+  padding: 3em 0;
+}
+.FooterGrid {
+  @include makeGrid(2fr repeat(3, 1fr), 3em);
+}
+.Title {
+  margin-bottom: 1em;
+}
+.TitleLogo {
+  margin-bottom: 0.4em;
+}

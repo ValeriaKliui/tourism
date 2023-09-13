@@ -1,0 +1,10 @@
+@import "../../../assets/vars/vars.scss";
+.PhotoPrev {
+  position: relative;
+  min-height: 200px;
+}
+.Title {
+  color: $the-lightest;
+  position: absolute;
+  bottom: 1em;
+}

@@ -1,0 +1,14 @@
+@import "../../../assets/vars/vars.scss";
+
+.Header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Nav {
+  display: flex;
+}
+.NavList {
+  display: flex;
+  gap: 2em;
+}

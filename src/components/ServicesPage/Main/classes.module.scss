@@ -1,0 +1,40 @@
+@import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/vars/vars.scss";
+
+.Main {
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+.CardServices {
+  @include makeGrid(repeat(4, 1fr), 1em);
+}
+.CardPosts {
+  @include makeGrid(repeat(3, 1fr), 1em);
+}
+.Facilities {
+  background-image: url("../../../assets/img/images/facilities.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $the-lightest;
+  padding: 5em 0;
+}
+.FacilitiesGrid {
+  @include makeGrid(repeat(2, 1fr), 2em);
+  align-items: center;
+}
+.FacilitiesText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+.FacilitiesBlocks {
+  @include makeGrid(repeat(2, 1fr), 1em);
+}
+.Benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

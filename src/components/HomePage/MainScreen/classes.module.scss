@@ -1,0 +1,10 @@
+@import "../../../assets/vars/vars.scss";
+
+.MainScreen {
+  padding: 15% 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $the-lightest;
+  text-align: center;
+}

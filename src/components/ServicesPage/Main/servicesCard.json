@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Get Best Price",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu eu, dui tortor, proin eu lectus pellentesque. A cras suscipit amet ",
+        "src": "../../../src/assets/img/icons/icomoon-free_price-tags.svg"
+    },
+    {
+        "id": 2,
+        "title": "All Destination",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu eu, dui tortor, proin eu lectus pellentesque. A cras suscipit amet ",
+        "src": "../../../src/assets/img/icons/majesticons_map-simple-destination.svg"
+    },
+    {
+        "id": 3,
+        "title": "City Tours",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu eu, dui tortor, proin eu lectus pellentesque. A cras suscipit amet ",
+        "src": "../../../src/assets/img/icons/arcticons_city-transit.svg"
+    },
+    {
+        "id": 4,
+        "title": "Photography",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu eu, dui tortor, proin eu lectus pellentesque. A cras suscipit amet ",
+        "src": "../../../src/assets/img/icons/majesticons_image-photography-line.svg"
+    }
+]

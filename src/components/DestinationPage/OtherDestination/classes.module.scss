@@ -1,0 +1,13 @@
+@import "../../../assets/vars/vars.scss";
+.Container {
+  padding: 1em;
+  color: $the-lightest;
+  background-image: url("../../../assets/img/images/other-destinations.png");
+  min-height: 205px;
+  border-radius: 10px;
+  line-height: 180%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}

@@ -1,0 +1,12 @@
+@import "../../../assets/mixins/animate.scss";
+@import "../../../assets/vars/vars.scss";
+.Logo {
+  @include animate;
+  cursor: pointer;
+}
+.PathLight {
+  fill: $the-lightest;
+}
+.PathDark {
+  fill: $secondary;
+}

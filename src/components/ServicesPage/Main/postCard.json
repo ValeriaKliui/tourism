@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "src": "../../../src/assets/img/images/water.png"
+    },
+    {
+        "id": 2,
+        "src": "../../../src/assets/img/images/city.png"
+    },
+    {
+        "id": 3,
+        "src": "../../../src/assets/img/images/dreams.png"
+    }
+]

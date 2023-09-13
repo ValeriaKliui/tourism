@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Baby",
+        "text": "free buggy",
+        "src": "../../../src/assets/img/icons/mdi_baby-buggy.svg"
+    },
+    {
+        "id": 2,
+        "title": "Drinks",
+        "text": "included",
+        "src": "../../../src/assets/img/icons/fluent_drink-wine-24-filled.svg"
+    },
+    {
+        "id": 3,
+        "title": "Camp",
+        "text": "included",
+        "src": "../../../src/assets/img/icons/fluent-emoji-high-contrast_camping.svg"
+    },
+    {
+        "id": 4,
+        "title": "World",
+        "text": "custom tours",
+        "src": "../../../src/assets/img/icons/emojione-monotone_world-map.svg"
+    }
+]

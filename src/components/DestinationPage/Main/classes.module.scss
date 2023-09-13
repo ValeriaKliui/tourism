@@ -1,0 +1,62 @@
+@import "../../../assets/mixins/fontPoppins.scss";
+@import "../../../assets/mixins/makeGrid.scss";
+.Main {
+  display: flex;
+  gap: 1.5em;
+  padding: 3em 0;
+}
+.Section,
+.Aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.BigLetter {
+  @include fontPoppins($size: 5em, $line-height: 120%, $weight: 700);
+  margin: 0 0.5em 0 0;
+}
+.CartFirstText {
+  display: flex;
+  align-items: center;
+}
+.Photo {
+  max-height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.TitleText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.Location {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.Text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.Photos {
+  @include makeGrid(repeat(2, 1fr), 1.5em);
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
+.AsideTitles {
+  display: flex;
+  justify-content: space-between;
+}
+.OtherDestinations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}

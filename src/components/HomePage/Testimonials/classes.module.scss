@@ -1,0 +1,16 @@
+@import "../../../assets/mixins/makeGrid.scss";
+.Testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 4em;
+}
+.TestimonialsGrid {
+  @include makeGrid(repeat(3, 1fr));
+}
+.Titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

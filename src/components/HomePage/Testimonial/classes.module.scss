@@ -1,0 +1,18 @@
+@import "../../../assets/mixins/animate.scss";
+@import "../../../assets/vars/vars.scss";
+
+.Testimonial {
+  @include animate;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  &:hover {
+    background-color: $primary;
+  }
+}
+.User {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}

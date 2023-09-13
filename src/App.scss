@@ -1,0 +1,56 @@
+@import "./assets/mixins/fontPoppins.scss";
+@import "./assets/vars/vars.scss";
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-main,
+.main-screen {
+  background-image: url("./assets/img/images/Background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.header-main {
+  padding: 2%;
+  color: $the-lightest;
+  .active,
+  a:hover {
+    @include fontPoppins($weight: 700);
+  }
+}
+.header-others {
+  padding: 1%;
+  color: $the-darkest;
+  .active,
+  a:hover {
+    @include fontPoppins($weight: 700);
+    color: $primary;
+  }
+}
+.title-l {
+  @include fontPoppins($size: 2.5em);
+}
+.title-m {
+  @include fontPoppins($size: 2em, $weight: 700, $line-height: 120%);
+}
+.title-s {
+  @include fontPoppins($size: 1.2em, $weight: 700, $line-height: 120%);
+}
+h4 {
+  color: $secondary;
+}
+.bright_secondary {
+  color: $secondary;
+  @include fontPoppins($weight: 700, $size: 2em);
+}
+.bright_primary {
+  color: $primary;
+}
+.subtext {
+  @include fontPoppins($weight: 700, $size: 0.7em);
+}
+.bold {
+  font-weight: bold;
+}
