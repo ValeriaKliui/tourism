@@ -6,7 +6,7 @@ export const Testimonials = () => {
   const { testimonials } = useTestimonials();
   return (
     <div className={["wrapper", classes.Testimonials].join(" ")}>
-      <div className={classes.Titles}>
+      <div className="centered-title">
         <h4>Testimonials</h4>
         <h2>What they say about us</h2>
       </div>

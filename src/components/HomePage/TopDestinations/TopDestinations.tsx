@@ -7,7 +7,7 @@ export const TopDestinations = () => {
 
   return (
     <div className={["wrapper", classes.TopDestinations].join(" ")}>
-      <div className={classes.Titles}>
+      <div className="centered-title">
         <h4>Top Destination</h4>
         <h2>Discover your love</h2>
       </div>

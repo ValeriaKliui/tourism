@@ -43,7 +43,7 @@ export const Main = () => {
           </div>
         </div>
         <div className={[classes.Benefits, "wrapper"].join(" ")}>
-          <div className={classes.BenefitsTitle}>
+          <div className="centered-title">
             <p>BENEFITS</p>
             <h2 className="title-m">OUR SERVICE</h2>
           </div>

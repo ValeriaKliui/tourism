@@ -1,0 +1,9 @@
+@import "../../../assets/mixins/animate.scss";
+@import "../../../assets/vars/vars.scss";
+.Option {
+  @include animate;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}

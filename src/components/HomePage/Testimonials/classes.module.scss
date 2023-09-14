@@ -9,8 +9,3 @@
 .TestimonialsGrid {
   @include makeGrid(repeat(3, 1fr));
 }
-.Titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

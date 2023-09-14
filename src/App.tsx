@@ -4,21 +4,11 @@ import { Home } from "./pages/Home";
 import { Header } from "./components/Shared/Header/Header";
 import { Footer } from "./components/Shared/Footer/Footer";
 import "../firebase";
-import { useEffect } from "react";
-import { useDestinations } from "./assets/hooks/useDestinations";
-import { useTestimonials } from "./assets/hooks/useTestimonials";
 import { Discover } from "./pages/Discover";
 import { Services } from "./pages/Services";
+import { News } from "./pages/News";
 
 function App() {
-  const { setDestinations } = useDestinations();
-  const { setTestimonials } = useTestimonials();
-
-  useEffect(() => {
-    setDestinations();
-    setTestimonials();
-  }, []);
-
   return (
     <>
       <BrowserRouter>
@@ -27,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/news" element={<News />} />
         </Routes>
         <Footer />
       </BrowserRouter>
