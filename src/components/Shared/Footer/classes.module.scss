@@ -5,6 +5,9 @@
   background-color: $secondary;
   color: $the-lightest;
   padding: 3em 0;
+  p {
+    color: $the-lightest;
+  }
 }
 .FooterGrid {
   @include makeGrid(2fr repeat(3, 1fr), 3em);

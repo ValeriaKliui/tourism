@@ -8,11 +8,13 @@ import { OtherDestination } from "../OtherDestination/OtherDestination";
 export const Main = () => {
   return (
     <main>
-      <div className={[classes.Main, "wrapper"].join(" ")}>
+      <div className={[classes.Main, "wrapper", "padding_page"].join(" ")}>
         <section className={classes.Section}>
           <div className={classes.CartText}>
             <div className={classes.CartFirstText}>
-              <span className={classes.BigLetter}>D</span>
+              <span className={[classes.BigLetter, "big-letter"].join(" ")}>
+                D
+              </span>
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla

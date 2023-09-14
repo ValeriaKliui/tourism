@@ -29,7 +29,7 @@ export const Header = () => {
               <MyNavLink to="/about-us">About Us</MyNavLink>
             </li>
             <li>
-              <MyNavLink to="/contact">Contact</MyNavLink>
+              <MyNavLink to="/contacts">Contacts</MyNavLink>
             </li>
           </ul>
         </nav>

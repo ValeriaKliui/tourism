@@ -1,6 +1,5 @@
 @import "../../../assets/mixins/makeGrid.scss";
 .Main {
-  padding: 5em 0;
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -28,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin-bottom: 7em;
+  margin-bottom: 3em;
 }
 .Team {
   display: flex;

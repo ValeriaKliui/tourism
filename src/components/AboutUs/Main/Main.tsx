@@ -8,7 +8,7 @@ import { Member } from "../Member/Member";
 import { Variant } from "../Variant/Variant";
 export const Main = () => {
   return (
-    <main className={[classes.Main, "wrapper"].join(" ")}>
+    <main className={[classes.Main, "padding_page", "wrapper"].join(" ")}>
       <div className="centered-title">
         <h2>Why Choose Us ?</h2>
         <p>These popular destinations have a lot to offer</p>

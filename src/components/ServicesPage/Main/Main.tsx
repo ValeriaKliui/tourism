@@ -11,7 +11,7 @@ import { Benefit } from "../Benefit/Benefit";
 export const Main = () => {
   return (
     <main>
-      <div className={classes.Main}>
+      <div className={[classes.Main, "padding_page"].join(" ")}>
         <div className={[classes.CardServices, "wrapper"].join(" ")}>
           {servicesInfo.map(({ title, text, src, id }) => (
             <CardService key={id} title={title} text={text} src={src} />
@@ -26,7 +26,7 @@ export const Main = () => {
           <div className={["wrapper", classes.FacilitiesGrid].join(" ")}>
             <div className={classes.FacilitiesText}>
               <h2 className="title-l">Facilities</h2>
-              <p>
+              <p className="light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                 aliquam, purus sit amet luctus venenatis, lectus magna fringilla
                 urna, porttitor rhoncus dolor purus non enim luctus venenatis,

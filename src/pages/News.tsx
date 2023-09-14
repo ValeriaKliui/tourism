@@ -9,9 +9,9 @@ export const News = () => {
     setArticles();
   }, []);
   return (
-    <div>
+    <>
       <PhotoPrev photoPrevSrc={PhotoPrevSrc} text="Our News" />
       <Main />
-    </div>
+    </>
   );
 };

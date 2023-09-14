@@ -1,0 +1,35 @@
+@import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/vars/vars.scss";
+.Main {
+  @include makeGrid(repeat(2, 1fr), 2em);
+}
+.InTouch {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+.Info {
+  @include makeGrid(repeat(2, 1fr), 1em);
+  gap: 1.5em;
+}
+.Point {
+  display: flex;
+  justify-content: space-between;
+}
+.Label {
+  color: $black;
+}
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

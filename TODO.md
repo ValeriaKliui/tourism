@@ -1,1 +1,2 @@
-##todo navigation to error page
+##make mixins for flex
+##mixins for paddings

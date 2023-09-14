@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useRouteError } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Header } from "./components/Shared/Header/Header";
 import { Footer } from "./components/Shared/Footer/Footer";
@@ -8,6 +8,8 @@ import { Discover } from "./pages/Discover";
 import { Services } from "./pages/Services";
 import { News } from "./pages/News";
 import { AboutUs } from "./pages/AboutUs";
+import { Contacts } from "./pages/Contacts";
+import { WrongPage } from "./pages/WrongPage";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/news" element={<News />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/:id" element={<WrongPage />} />;
         </Routes>
         <Footer />
       </BrowserRouter>

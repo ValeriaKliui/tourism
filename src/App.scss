@@ -1,5 +1,14 @@
 @import "./assets/mixins/fontPoppins.scss";
 @import "./assets/vars/vars.scss";
+html,
+body {
+  height: 100%;
+}
+#root {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,6 +27,9 @@
   .active,
   a:hover {
     @include fontPoppins($weight: 700);
+  }
+  p {
+    color: $the-lightest;
   }
 }
 .header-others {
@@ -41,6 +53,9 @@
 h4 {
   color: $secondary;
 }
+p {
+  color: $the-darkest;
+}
 .bright_secondary {
   color: $secondary;
   @include fontPoppins($weight: 700, $size: 2em);
@@ -48,8 +63,14 @@ h4 {
 .bright_primary {
   color: $primary;
 }
+.light {
+  color: $the-lightest;
+}
 .subtext {
   @include fontPoppins($weight: 700, $size: 0.7em);
+}
+.big-letter {
+  @include fontPoppins($size: 5em, $line-height: 120%);
 }
 .bold {
   font-weight: bold;
@@ -65,4 +86,17 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+input,
+textarea {
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid $light;
+}
+input::placeholder {
+  color: $light;
+  @include fontPoppins;
+}
+.padding_page {
+  padding: 5em 0;
 }

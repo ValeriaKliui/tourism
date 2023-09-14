@@ -3,7 +3,7 @@ import { Sort } from "../Sort/Sort";
 import classes from "./classes.module.scss";
 export const Main = () => {
   return (
-    <main className={["wrapper", classes.Main].join(" ")}>
+    <main className={["wrapper", classes.Main, "padding_page"].join(" ")}>
       <div className="centered-title">
         <h2>Travelaja Articles</h2>
         <p>
