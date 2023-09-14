@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Agung perdana",
+        "text": "Web Designer",
+        "src": "../../../src/assets/img/team/Agung perdana.png"
+    },
+    {
+        "id": 2,
+        "title": "Viola Resti",
+        "text": "Marketing Director",
+        "src": "../../../src/assets/img/team/Viola Resti.png"
+    },
+    {
+        "id": 3,
+        "title": "Rahardianysah",
+        "text": "International Relations",
+        "src": "../../../src/assets/img/team/Rahardianysah.png"
+    },
+    {
+        "id": 4,
+        "title": "Andika",
+        "text": "Medical Check",
+        "src": "../../../src/assets/img/team/Andika.png"
+    },
+    {
+        "id": 5,
+        "title": "Theresa Russell",
+        "text": "Doctor Assistant",
+        "src": "../../../src/assets/img/team/Theresa Russell.png"
+    }
+]

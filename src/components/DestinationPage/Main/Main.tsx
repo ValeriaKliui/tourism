@@ -33,7 +33,7 @@ export const Main = () => {
             alt="Lorem ipsum dolor sit amet"
             className={classes.Photo}
           />
-          <div className={classes.TitleText}>
+          <div className="gapped-title">
             <h2>Memorable Festivals On Bali Beach</h2>
             <div className={classes.Location}>
               <img src={locationPic} alt="" width="40" />

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "TRAVEL",
+        "src": "../../../src/assets/img/icons/emojione-monotone_ship.svg"
+    },
+    {
+        "id": 2,
+        "title": "CITY TOUR",
+        "src": "../../../src/assets/img/icons/healthicons_city-outline.svg"
+    },
+    {
+        "id": 3,
+        "title": "ISLAND TOUR",
+        "src": "../../../src/assets/img/icons/fontisto_island.svg"
+    },
+    {
+        "id": 4,
+        "title": "EXPLORE WORLD",
+        "src": "../../../src/assets/img/icons/gis_map-route.svg"
+    }
+]

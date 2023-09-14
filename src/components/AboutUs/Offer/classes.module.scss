@@ -1,0 +1,9 @@
+@import "../../../assets/mixins/animate.scss";
+.Offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  @include animate;
+}

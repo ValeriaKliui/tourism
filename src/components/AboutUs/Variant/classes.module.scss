@@ -1,0 +1,8 @@
+@import "../../../assets/vars/vars.scss";
+@import "../../../assets/mixins/animate.scss";
+
+.Variant {
+  @include animate;
+  color: $light;
+  text-align: center;
+}

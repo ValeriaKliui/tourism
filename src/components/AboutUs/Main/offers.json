@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Best price guarantee",
+        "src": "../../../src/assets/img/icons/bi_shield-check.svg"
+    },
+    {
+        "id": 2,
+        "title": "Easy Booking",
+        "src": "../../../src/assets/img/icons/healthicons_i-schedule-school-date-time-outline.svg"
+    },
+    {
+        "id": 3,
+        "title": "Customer Service 24h",
+        "src": "../../../src/assets/img/icons/ri_customer-service-2-line.svg"
+    }
+]

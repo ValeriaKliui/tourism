@@ -1,0 +1,41 @@
+@import "../../../assets/mixins/makeGrid.scss";
+.Main {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.Offers {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.AboutBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+}
+.AboutBlockText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.AboutPhoto {
+  border-radius: 15px;
+}
+.Teams {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 7em;
+}
+.Team {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.Variants {
+  display: flex;
+  justify-content: space-around;
+}
