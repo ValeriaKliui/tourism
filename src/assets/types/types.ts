@@ -11,9 +11,17 @@ export type Testimonial = {
   text: string;
   id: number;
 };
+
+export const enum TypeArticle {
+  beach = "beach",
+  explore_world = "Explore World",
+  family_holidays = "Family Holidays",
+  art_and_culture = "Art and culture",
+}
 export type Article = {
   title: string;
   src: string;
   id: number;
   date: string;
+  type: TypeArticle[];
 };

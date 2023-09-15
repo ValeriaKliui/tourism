@@ -1,9 +1,27 @@
 @import "../../../assets/mixins/animate.scss";
+@import "../../../assets/mixins/fontPoppins.scss";
 @import "../../../assets/vars/vars.scss";
 .Option {
   @include animate;
   cursor: pointer;
   &:hover {
     color: $primary;
+  }
+}
+.Active {
+  background-color: $primary;
+  border: none;
+  border-radius: 10px;
+  color: $the-lightest;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  padding: 0.7em;
+  cursor: pointer;
+  @include fontPoppins($weight: 700);
+  &:hover {
+    color: $the-lightest;
   }
 }

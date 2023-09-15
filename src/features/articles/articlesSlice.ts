@@ -1,23 +1,29 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { Article } from "../../assets/types/types";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { Article, TypeArticle } from "../../assets/types/types";
 import { fetchArticles } from "./fetchArticles";
 
 interface ArticlesState {
   articles: Article[];
   error: null | true;
   loading: true | false;
+  sort: TypeArticle | null;
 }
 
 const initialState: ArticlesState = {
   articles: [],
   error: null,
   loading: false,
+  sort: null,
 };
 
 export const articlesSlice = createSlice({
   name: "articles",
   initialState,
-  reducers: {},
+  reducers: {
+    setSort(state, action: PayloadAction<TypeArticle>) {
+      state.sort = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchArticles.pending, (state) => {
@@ -33,4 +39,5 @@ export const articlesSlice = createSlice({
       });
   },
 });
+export const { setSort } = articlesSlice.actions;
 export default articlesSlice.reducer;

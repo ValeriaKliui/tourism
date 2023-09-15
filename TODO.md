@@ -1,2 +1,2 @@
 ##make mixins for flex
-##mixins for paddings
+##handle the error and loading of data

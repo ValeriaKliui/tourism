@@ -2,7 +2,6 @@ import { SortOption } from "../SortOption/SortOption";
 import classes from "./classes.module.scss";
 export const Sort = () => {
   const sortOptions = [
-    "Adventure Travel",
     "Beach",
     "Explore World",
     "Family Holidays",
