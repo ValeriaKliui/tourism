@@ -55,7 +55,7 @@ export const Main = () => {
             <Member title={title} src={src} text={text} key={id} />
           ))}
         </div>
-      </div>{" "}
+      </div>
       <div className={classes.Variants}>
         {variantsInfo.map(({ title, src, id }) => (
           <Variant title={title} src={src} key={id} />

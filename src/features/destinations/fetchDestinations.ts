@@ -13,7 +13,8 @@ export const fetchDestinations = createAsyncThunk<
   try {
     const querySnapshot = await getDocs(collection(db, "top-destinations"));
     const docs = querySnapshot.docs;
-    return docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+    if (docs.length) return docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+    else return rejectWithValue("error");
   } catch (error) {
     console.error(error);
     return rejectWithValue("error");

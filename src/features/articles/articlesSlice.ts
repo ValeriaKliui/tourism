@@ -12,7 +12,7 @@ interface ArticlesState {
 const initialState: ArticlesState = {
   articles: [],
   error: null,
-  loading: false,
+  loading: true,
   sort: null,
 };
 

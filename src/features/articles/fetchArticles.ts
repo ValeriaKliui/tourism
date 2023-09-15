@@ -25,15 +25,17 @@ export const fetchArticles = createAsyncThunk<
       querySnapshot = await getDocs(query(ref, orderBy("date", "desc")));
     }
     const docs = querySnapshot.docs;
-    return docs.map((doc) => ({
-      ...doc.data(),
-      id: doc.id,
-      date: doc.data().date.toDate().toLocaleDateString("en-us", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      }),
-    }));
+    if (docs.length)
+      return docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+        date: doc.data().date.toDate().toLocaleDateString("en-us", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        }),
+      }));
+    else return rejectWithValue("error");
   } catch (error) {
     console.error(error);
     return rejectWithValue("error");

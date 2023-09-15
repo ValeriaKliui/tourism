@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { Testimonial } from "../../assets/types/types";
 import { fetchTestimonials } from "./fetchTestimonials";
 

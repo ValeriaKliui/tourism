@@ -1,0 +1,4 @@
+@import "../../assets/mixins/flex.scss";
+.ErrorComponent {
+  @include flexColumnGapped(1em);
+}
