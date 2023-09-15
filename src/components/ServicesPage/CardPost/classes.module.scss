@@ -1,13 +1,12 @@
 @import "../../../assets/mixins/animate.scss";
+@import "../../../assets/mixins/flex.scss";
 @import "../../../assets/vars/vars.scss";
 .PostCard {
   @include animate;
   min-height: 260px;
   padding: 1.5em;
   color: $the-lightest;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
   align-items: flex-start;
   p {
     color: $the-lightest;

@@ -1,14 +1,12 @@
 @import "../../../assets/vars/vars.scss";
-
+@import "../../../assets/mixins/flex.scss";
 .Header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  @include flexJustifySpaceBet;
+  align-items: center;
 }
 .Nav {
   display: flex;
 }
 .NavList {
-  display: flex;
-  gap: 2em;
+  @include flexGapped(2em);
 }

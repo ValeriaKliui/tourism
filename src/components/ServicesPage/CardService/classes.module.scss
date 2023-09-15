@@ -1,8 +1,7 @@
 @import "../../../assets/mixins/animate.scss";
+@import "../../../assets/mixins/flex.scss";
 .ServiceCard {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnGapped(1em);
   align-items: flex-start;
-  gap: 1em;
   @include animate;
 }

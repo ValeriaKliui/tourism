@@ -1,11 +1,11 @@
 @import "../../../assets/mixins/animate.scss";
 @import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/mixins/flex.scss";
 .TravelersPoint {
-  display: flex;
+  @include flexJustifySpaceBet;
+  @include flexGapped(2em);
   align-items: center;
-  justify-content: space-between;
   padding: 4em 0;
-  gap: 2em;
 }
 
 .TravelersPointMedia {
@@ -13,10 +13,8 @@
   width: 50%;
 }
 .TravelersPointText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1em;
+  @include flexColumnGapped(1em);
+  @include flexJustifySpaceBet;
 }
 .Points {
   @include makeGrid(repeat(2, 1fr), 1.5em);

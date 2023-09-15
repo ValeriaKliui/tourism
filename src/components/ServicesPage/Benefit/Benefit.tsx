@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MyButton } from "../../Shared/MyButton/MyButton";
 import classes from "./classes.module.scss";
 type BenefitProps = {
@@ -14,7 +15,9 @@ export const Benefit: React.FC<BenefitProps> = ({ title, src, text }) => {
       <div className={classes.Text}>
         <h2>{title}</h2>
         <p>{text}</p>
-        <MyButton text="Read More" />
+        <Link to={title} target="_blank">
+          <MyButton text="Read More" />
+        </Link>
       </div>
     </div>
   );

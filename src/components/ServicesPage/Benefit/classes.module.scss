@@ -1,10 +1,8 @@
+@import "../../../assets/mixins/flex.scss";
 .Benefit {
-  display: flex;
-  gap: 1.5em;
+  @include flexGapped(1.5em);
 }
 .Text {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
   align-items: flex-start;
 }

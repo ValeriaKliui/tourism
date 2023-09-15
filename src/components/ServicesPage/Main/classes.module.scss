@@ -1,10 +1,9 @@
 @import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/mixins/flex.scss";
 @import "../../../assets/vars/vars.scss";
 
 .Main {
-  display: flex;
-  flex-direction: column;
-  gap: 4em;
+  @include flexColumnGapped(4em);
 }
 .CardServices {
   @include makeGrid(repeat(4, 1fr), 1em);
@@ -24,19 +23,15 @@
   align-items: center;
 }
 .FacilitiesText {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
   align-items: flex-start;
 }
 .FacilitiesBlocks {
   @include makeGrid(repeat(2, 1fr), 1em);
 }
 .Benefits {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnGapped(2em);
   align-items: center;
-  gap: 2em;
 }
 .BenefitsGrid {
   @include makeGrid(repeat(3, 1fr), 2.5em);

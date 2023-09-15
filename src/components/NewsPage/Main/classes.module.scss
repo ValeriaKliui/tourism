@@ -1,5 +1,4 @@
+@import "../../../assets/mixins/flex.scss";
 .Main {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
+  @include flexColumnGapped(3em);
 }

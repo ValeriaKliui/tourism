@@ -20,7 +20,7 @@ export const articlesSlice = createSlice({
   name: "articles",
   initialState,
   reducers: {
-    setSort(state, action: PayloadAction<TypeArticle>) {
+    setSort(state, action: PayloadAction<TypeArticle | null>) {
       state.sort = action.payload;
     },
   },

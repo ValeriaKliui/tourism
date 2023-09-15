@@ -1,6 +1,7 @@
 import { Destination } from "../Destination/Destination";
 import classes from "./classes.module.scss";
 import { useDestinations } from "../../../assets/hooks/useDestinations";
+import { Link } from "react-router-dom";
 
 export const TopDestinations = () => {
   const { destinations } = useDestinations();
@@ -13,13 +14,14 @@ export const TopDestinations = () => {
       </div>
       <div className={classes.TopDestinationsGrid}>
         {destinations.map(({ name, info, duration, id, src }) => (
-          <Destination
-            key={id}
-            location={name}
-            info={info}
-            days={duration}
-            src={src}
-          />
+          <Link to={name} target="_blank" key={id}>
+            <Destination
+              location={name}
+              info={info}
+              days={duration}
+              src={src}
+            />
+          </Link>
         ))}
       </div>
     </div>

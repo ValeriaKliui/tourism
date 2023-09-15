@@ -8,18 +8,23 @@ import { CardPost } from "../CardPost/CardPost";
 import { MyButton } from "../../Shared/MyButton/MyButton";
 import { Facility } from "../Facility/Facility";
 import { Benefit } from "../Benefit/Benefit";
+import { Link } from "react-router-dom";
 export const Main = () => {
   return (
     <main>
       <div className={[classes.Main, "padding_page"].join(" ")}>
         <div className={[classes.CardServices, "wrapper"].join(" ")}>
           {servicesInfo.map(({ title, text, src, id }) => (
-            <CardService key={id} title={title} text={text} src={src} />
+            <Link to="title" key={id}>
+              <CardService title={title} text={text} src={src} />
+            </Link>
           ))}
         </div>
         <div className={[classes.CardPosts, "wrapper"].join(" ")}>
           {postInfo.map(({ src, id }) => (
-            <CardPost key={id} src={src} />
+            <Link to="title" key={id} target="_blank">
+              <CardPost src={src} />{" "}
+            </Link>
           ))}
         </div>
         <div className={classes.Facilities}>
@@ -33,7 +38,9 @@ export const Main = () => {
                 lectus magna fringilla urna, porttitor rhoncus dolor purus non
                 eni
               </p>
-              <MyButton text="Read More" />
+              <Link to="Facilities" target="_blank">
+                <MyButton text="Read More" />
+              </Link>
             </div>
             <div className={classes.FacilitiesBlocks}>
               {facilitiesInfo.map(({ id, title, text, src }) => (

@@ -9,20 +9,31 @@ export const fetchArticles = createAsyncThunk<
   {
     rejectValue: string;
   }
->("articles/fetchArticles", async (sortType, { rejectWithValue, getState }) => {
+>("articles/fetchArticles", async (sortType, { rejectWithValue }) => {
   try {
     const ref = collection(db, "articles");
     let querySnapshot;
-    console.log(sortType);
     if (sortType) {
       querySnapshot = await getDocs(
-        query(ref, where("type", "array-contains", sortType))
+        query(
+          ref,
+          where("type", "array-contains", sortType),
+          orderBy("date", "desc")
+        )
       );
     } else {
-      querySnapshot = await getDocs(query(ref));
+      querySnapshot = await getDocs(query(ref, orderBy("date", "desc")));
     }
     const docs = querySnapshot.docs;
-    return docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+    return docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+      date: doc.data().date.toDate().toLocaleDateString("en-us", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }),
+    }));
   } catch (error) {
     console.error(error);
     return rejectWithValue("error");

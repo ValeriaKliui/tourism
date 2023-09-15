@@ -1,4 +1,5 @@
 @import "./assets/mixins/fontPoppins.scss";
+@import "./assets/mixins/flex.scss";
 @import "./assets/vars/vars.scss";
 html,
 body {
@@ -76,16 +77,12 @@ p {
   font-weight: bold;
 }
 .centered-title {
-  display: flex;
-  flex-direction: column;
+  @include flexColumnGapped(0.5em);
   align-items: center;
   text-align: center;
-  gap: 0.5em;
 }
 .gapped-title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
+  @include flexColumnGapped(0.5em);
 }
 input,
 textarea {

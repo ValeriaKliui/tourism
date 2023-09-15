@@ -5,8 +5,6 @@ export const useSort = () => {
   const sort = useAppSelector((state) => state.articles.sort);
   const dispatch = useAppDispatch();
   const setSort = (type: TypeArticle) =>
-    dispatch(
-      setSortRed(TypeArticle[type.split(" ").join("_")] ? type : ("all" as any))
-    );
+    dispatch(setSortRed(TypeArticle[type.split(" ").join("_")] ? type : null));
   return { sort, setSort };
 };

@@ -1,38 +1,30 @@
 @import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/mixins/flex.scss";
 .Main {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
+  @include flexColumnGapped(3em);
 }
 .Offers {
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
+  @include flexJustifySpaceBet;
+  @include flexGapped(2em);
 }
 .AboutBlock {
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
+  @include flexJustifySpaceBet;
+  @include flexGapped(2em);
   align-items: center;
 }
 .AboutBlockText {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
 }
 .AboutPhoto {
   border-radius: 15px;
 }
 .Teams {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
   margin-bottom: 3em;
 }
 .Team {
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
+  @include flexJustifySpaceBet;
+  @include flexGapped(2em);
 }
 .Variants {
   display: flex;

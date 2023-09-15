@@ -23,7 +23,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/:id" element={<WrongPage />} />;
+          <Route path="*" element={<WrongPage />} />;
         </Routes>
         <Footer />
       </BrowserRouter>

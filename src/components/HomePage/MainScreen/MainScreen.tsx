@@ -10,7 +10,7 @@ export const MainScreen = () => {
         purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
         rhoncus dolor purus non enim praesent elementum facilisis leo,
       </p>
-      <Search />
+      {/* <Search /> */}
     </div>
   );
 };

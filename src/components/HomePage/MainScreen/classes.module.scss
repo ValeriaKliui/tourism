@@ -1,10 +1,9 @@
 @import "../../../assets/vars/vars.scss";
-
+@import "../../../assets/mixins/flex.scss";
 .MainScreen {
   padding: 15% 15%;
-  display: flex;
+  @include flexColumnGapped;
   align-items: center;
-  flex-direction: column;
   color: $the-lightest;
   text-align: center;
 }

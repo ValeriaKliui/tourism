@@ -4,6 +4,7 @@ import locationPic from "../../../assets/img/icons/carbon_location-filled.svg";
 import mountain from "../../../assets/img/images/mountain.png";
 import lake from "../../../assets/img/images/lake.png";
 import { OtherDestination } from "../OtherDestination/OtherDestination";
+import { Link } from "react-router-dom";
 
 export const Main = () => {
   return (
@@ -92,7 +93,9 @@ export const Main = () => {
           </div>
           <div className={classes.OtherDestinations}>
             {new Array(5).fill(1).map((elem, index) => (
-              <OtherDestination key={index} />
+              <Link to={"other-destinations"} target="_blank" key={index}>
+                <OtherDestination />
+              </Link>
             ))}
           </div>
         </aside>

@@ -1,4 +1,6 @@
 @import "../../../assets/vars/vars.scss";
+@import "../../../assets/mixins/flex.scss";
+
 .Container {
   padding: 1em;
   color: $the-lightest;
@@ -6,9 +8,7 @@
   min-height: 205px;
   border-radius: 10px;
   line-height: 180%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
   align-items: flex-start;
   justify-content: space-evenly;
 }

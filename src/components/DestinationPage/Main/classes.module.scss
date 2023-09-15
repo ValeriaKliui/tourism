@@ -1,14 +1,13 @@
 @import "../../../assets/mixins/fontPoppins.scss";
+@import "../../../assets/mixins/flex.scss";
 @import "../../../assets/mixins/makeGrid.scss";
 .Main {
   display: flex;
-  gap: 1.5em;
+  @include flexGapped(1.5em);
 }
 .Section,
 .Aside {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+  @include flexColumnGapped(2em);
 }
 .BigLetter {
   @include fontPoppins($size: 5em, $line-height: 120%, $weight: 700);
@@ -26,12 +25,10 @@
 .Location {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  @include flexGapped(0.5em);
 }
 .Text {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  @include flexColumnGapped(1em);
 }
 .Photos {
   @include makeGrid(repeat(2, 1fr), 1.5em);
@@ -46,11 +43,8 @@
   }
 }
 .AsideTitles {
-  display: flex;
-  justify-content: space-between;
+  @include flexJustifySpaceBet;
 }
 .OtherDestinations {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
+  @include flexColumnGapped(1.2em);
 }
