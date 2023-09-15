@@ -1,5 +1,6 @@
 @import "../../../assets/mixins/makeGrid.scss";
 @import "../../../assets/mixins/flex.scss";
+@import "../../../assets/mixins/media.scss";
 .Testimonials {
   @include flexColumnGapped(2em);
   align-items: center;
@@ -7,4 +8,9 @@
 }
 .TestimonialsGrid {
   @include makeGrid(repeat(3, 1fr));
+  @include _768 {
+    grid-template-rows: 1fr;
+    grid-auto-rows: 0;
+    overflow-y: hidden;
+  }
 }

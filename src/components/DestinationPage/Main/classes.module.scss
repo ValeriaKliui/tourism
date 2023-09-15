@@ -9,6 +9,9 @@
 .Aside {
   @include flexColumnGapped(2em);
 }
+.Aside {
+  flex-basis: 140%;
+}
 .BigLetter {
   @include fontPoppins($size: 5em, $line-height: 120%, $weight: 700);
   margin: 0 0.5em 0 0;

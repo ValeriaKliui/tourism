@@ -1,5 +1,6 @@
 @import "../../../assets/vars/vars.scss";
 @import "../../../assets/mixins/flex.scss";
+@import "../../../assets/mixins/media.scss";
 .Header {
   @include flexJustifySpaceBet;
   align-items: center;
@@ -9,4 +10,7 @@
 }
 .NavList {
   @include flexGapped(2em);
+  @include _768 {
+    display: none;
+  }
 }

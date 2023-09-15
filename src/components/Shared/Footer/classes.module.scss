@@ -1,6 +1,6 @@
 @import "../../../assets/vars/vars.scss";
 @import "../../../assets/mixins/makeGrid.scss";
-
+@import "../../../assets/mixins/media.scss";
 .Footer {
   background-color: $secondary;
   color: $the-lightest;
@@ -11,6 +11,16 @@
 }
 .FooterGrid {
   @include makeGrid(2fr repeat(3, 1fr), 3em);
+  @include _768 {
+    @include makeGrid(repeat(3, 1fr), 1em);
+  }
+}
+.FooterGrid {
+  div:first-child {
+    @include _768 {
+      display: none;
+    }
+  }
 }
 .Title {
   margin-bottom: 1em;

@@ -81,7 +81,7 @@ export const Main = () => {
         <aside className={classes.Aside}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.73747285937!2d-37.066396224001835!3d-10.907545321739098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab30d15555555%3A0x94fdad6caafd1cf2!2zSiBMIE9yZ2FuaXphw6fDtWVz!5e0!3m2!1sru!2sby!4v1694591107194!5m2!1sru!2sby"
-            width="350"
+            style={{ width: "100%" }}
             height="200"
             loading="lazy"
             frameBorder="0"

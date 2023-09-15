@@ -1,5 +1,6 @@
 @import "../../../assets/mixins/makeGrid.scss";
 @import "../../../assets/mixins/flex.scss";
+@import "../../../assets/mixins/media.scss";
 @import "../../../assets/vars/vars.scss";
 .Main {
   @include makeGrid(repeat(2, 1fr), 2em);
@@ -16,6 +17,12 @@
 }
 .Info {
   @include makeGrid(repeat(2, 1fr), 1.5em);
+  @include _1170 {
+    @include flexColumnGapped(1em);
+  }
+  @include _979 {
+    @include flexColumnGapped(1em);
+  }
 }
 .Point {
   @include flexJustifySpaceBet;
@@ -24,6 +31,6 @@
   color: $black;
 }
 .Contacts {
-  @include flexColumnGapped;
+  @include flexColumnGapped(1em);
   @include flexJustifySpaceBet;
 }

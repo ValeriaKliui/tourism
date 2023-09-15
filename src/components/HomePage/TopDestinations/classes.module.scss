@@ -1,5 +1,6 @@
 @import "../../../assets/mixins/makeGrid.scss";
 @import "../../../assets/mixins/flex.scss";
+@import "../../../assets/mixins/media.scss";
 .TopDestinations {
   @include flexColumnGapped(3em);
   align-items: center;
@@ -7,4 +8,7 @@
 }
 .TopDestinationsGrid {
   @include makeGrid(repeat(3, 1fr), 2em);
+  @include _768 {
+    @include makeGrid(repeat(2, 1fr), 2em);
+  }
 }

@@ -1,12 +1,19 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @import "./assets/vars/vars.scss";
 @import "./assets/mixins/fontPoppins.scss";
+@import "./assets/mixins/media.scss";
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 16px;
   @include fontPoppins;
+  @include _1170 {
+    font-size: 14px;
+  }
+  @include _600 {
+    font-size: 12px;
+  }
 }
 
 *,

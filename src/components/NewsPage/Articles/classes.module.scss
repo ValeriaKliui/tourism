@@ -1,4 +1,5 @@
 @import "../../../assets/mixins/makeGrid.scss";
+@import "../../../assets/mixins/media.scss";
 .Articles {
   @include makeGrid(repeat(3, 1fr), 2em);
   align-items: start;
@@ -7,5 +8,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+  }
+  @include _768 {
+    @include makeGrid(repeat(2, 1fr), 2em);
   }
 }

@@ -11,4 +11,7 @@
   @include flexColumnGapped(1em);
   align-items: flex-start;
   justify-content: space-evenly;
+  p {
+    color: $the-lightest;
+  }
 }
